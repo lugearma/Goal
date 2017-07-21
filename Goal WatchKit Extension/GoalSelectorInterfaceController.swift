@@ -10,24 +10,23 @@ import WatchKit
 import Foundation
 
 
-final class InterfaceController: WKInterfaceController {
+final class GoalSelectorInterfaceController: WKInterfaceController {
   
   @IBOutlet weak var clockButtonImage: WKImage!
   @IBOutlet weak var caloriesButtonImage: WKImage!
   @IBOutlet weak var clockTapGesture: WKTapGestureRecognizer!
   @IBOutlet weak var caloriesTapGesture: WKTapGestureRecognizer!
-  
+
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
   }
-
   
   @IBAction func handleClockButtonTapped() {
-    print(#function)
+    pushController(withName: "ClockFlow", context: nil)
   }
   
   @IBAction func handleCaloriesButtonTapped() {
-    print(#function)
+    pushController(withName: "CaloriesFlow", context: nil)
   }
   
   override func willActivate() {
@@ -39,5 +38,4 @@ final class InterfaceController: WKInterfaceController {
     // This method is called when watch view controller is no longer visible
     super.didDeactivate()
   }
-  
 }

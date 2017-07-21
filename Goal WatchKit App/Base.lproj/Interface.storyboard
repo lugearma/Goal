@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13156.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13040"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="ArialHB.ttc">
-            <string>ArialHebrew-Bold</string>
+        <array key="CaviarDreams.ttf">
+            <string>CaviarDreams</string>
         </array>
-        <array key="Kefa.ttf">
-            <string>Kefa-Regular</string>
+        <array key="CaviarDreams_Bold.ttf">
+            <string>CaviarDreams-Bold</string>
         </array>
     </customFonts>
     <scenes>
-        <!--Interface Controller-->
+        <!--Goal Selector Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Goal_WatchKit_App" customModuleProvider="target">
+                <controller contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="GoalSelectorInterfaceController" customModule="Goal_WatchKit_Extension">
                     <items>
                         <label width="1" height="31" alignment="left" text="Select your Goal" textAlignment="center" id="4R3-Qt-49M">
-                            <fontDescription key="font" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                            <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="18"/>
                         </label>
-                        <label width="1" height="34" alignment="left" text="You can select how to finish your workout" textAlignment="center" numberOfLines="2" id="04n-UA-5th">
-                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="12"/>
-                        </label>
-                        <label width="1" height="23" alignment="left" text="Active Goal:" textAlignment="center" id="Hbf-hg-FgS">
-                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="10"/>
+                        <label width="1" height="51" alignment="left" text="You can select how to finish your workout" textAlignment="center" numberOfLines="2" id="04n-UA-5th">
+                            <fontDescription key="font" name="CaviarDreams" family="Caviar Dreams" pointSize="12"/>
                         </label>
                         <group width="1" height="70" alignment="center" verticalAlignment="bottom" contentMode="scaleAspectFit" spacing="0.0" id="FIG-yw-GuP">
                             <items>
@@ -37,16 +34,15 @@
                                     <items>
                                         <group width="70" height="70" alignment="center" verticalAlignment="center" radius="35" id="Mca-bM-uuV">
                                             <items>
-                                                <imageView width="1" height="1" alignment="left" image="ClockButtonImage" contentMode="scaleAspectFit" id="SHa-HD-QYp">
-                                                    <gestureRecognizers>
-                                                        <tapGestureRecognizer id="eSt-Ds-AGg">
-                                                            <connections>
-                                                                <action selector="handleClockButtonTapped" destination="AgC-eL-Hgc" id="vob-9a-syg"/>
-                                                            </connections>
-                                                        </tapGestureRecognizer>
-                                                    </gestureRecognizers>
-                                                </imageView>
+                                                <imageView width="1" height="1" alignment="left" image="ClockButtonImage" contentMode="scaleAspectFit" id="SHa-HD-QYp"/>
                                             </items>
+                                            <gestureRecognizers>
+                                                <tapGestureRecognizer id="eSt-Ds-AGg">
+                                                    <connections>
+                                                        <action selector="handleClockButtonTapped" destination="AgC-eL-Hgc" id="vob-9a-syg"/>
+                                                    </connections>
+                                                </tapGestureRecognizer>
+                                            </gestureRecognizers>
                                         </group>
                                     </items>
                                 </group>
@@ -54,16 +50,15 @@
                                     <items>
                                         <group width="70" height="70" alignment="center" verticalAlignment="center" radius="35" id="meT-nK-55x">
                                             <items>
-                                                <imageView width="1" height="1" alignment="left" image="FlameButtonImage" contentMode="scaleAspectFit" animationDuration="0.5" id="XBj-mc-AxF">
-                                                    <gestureRecognizers>
-                                                        <tapGestureRecognizer id="AGk-6p-a8G">
-                                                            <connections>
-                                                                <action selector="handleCaloriesButtonTapped" destination="AgC-eL-Hgc" id="oj9-F8-fj5"/>
-                                                            </connections>
-                                                        </tapGestureRecognizer>
-                                                    </gestureRecognizers>
-                                                </imageView>
+                                                <imageView width="1" height="1" alignment="left" image="FlameButtonImage" contentMode="scaleAspectFit" animationDuration="0.5" id="XBj-mc-AxF"/>
                                             </items>
+                                            <gestureRecognizers>
+                                                <tapGestureRecognizer id="AGk-6p-a8G">
+                                                    <connections>
+                                                        <action selector="handleCaloriesButtonTapped" destination="AgC-eL-Hgc" id="oj9-F8-fj5"/>
+                                                    </connections>
+                                                </tapGestureRecognizer>
+                                            </gestureRecognizers>
                                         </group>
                                     </items>
                                 </group>
@@ -79,7 +74,16 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="327.79487179487182" y="307.30769230769232"/>
+            <point key="canvasLocation" x="279" y="430"/>
+        </scene>
+        <!--Time per exercise-->
+        <scene sceneID="pIC-7C-7La">
+            <objects>
+                <controller title="Time per exercise" id="KGL-k3-h52">
+                    <color key="backgroundColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="860" y="258"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -95,14 +99,92 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="175" y="948"/>
+        </scene>
+        <!--Goal Time-->
+        <scene sceneID="M2y-cr-fqF">
+            <objects>
+                <controller identifier="CaloriesFlow" title="Goal Time" id="XEB-o4-1JJ">
+                    <color key="backgroundColor" red="1" green="0.61178927949999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <segue destination="z7z-cR-CVf" kind="relationship" relationship="nextPage" id="cqg-Ne-cxl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="575" y="625"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Pj7-4p-KpQ">
+            <objects>
+                <controller id="z7z-cR-CVf">
+                    <color key="backgroundColor" red="0.43137254899999999" green="0.65098039220000004" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="846" y="625"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Goal_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="432" y="947"/>
+        </scene>
+        <!--ClockFlow-->
+        <scene sceneID="Wcw-cx-Y9v">
+            <objects>
+                <controller identifier="ClockFlow" id="8fZ-DK-M5n" customClass="GoalTimeInterfaceController" customModule="Goal_WatchKit_Extension">
+                    <items>
+                        <label width="156" height="40" alignment="left" text="Select Goal Time" textAlignment="center" id="y7j-Ky-YeA">
+                            <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="13"/>
+                        </label>
+                        <group width="1" height="44" alignment="left" id="NfY-XT-jZm">
+                            <items>
+                                <group width="0.29999999999999999" alignment="left" verticalAlignment="center" id="fJa-6D-dtd">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="iZ3-j2-JtC">
+                                            <items>
+                                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="-" id="mzR-nC-yQD">
+                                                    <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="22"/>
+                                                    <connections>
+                                                        <action selector="diminishTime" destination="8fZ-DK-M5n" id="u2Z-Vo-3FQ"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <label alignment="center" verticalAlignment="center" text="00" textAlignment="center" id="RD4-0W-dMM">
+                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="20"/>
+                                </label>
+                                <group width="0.29999999999999999" alignment="right" verticalAlignment="center" id="fKk-WJ-aVB">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="2br-ai-0oz">
+                                            <items>
+                                                <button width="1" height="1" alignment="right" verticalAlignment="center" title="+" id="KdE-nM-IIa">
+                                                    <color key="backgroundColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="22"/>
+                                                    <connections>
+                                                        <action selector="addTime" destination="8fZ-DK-M5n" id="5L7-RW-BnQ"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="addTimeButton" destination="KdE-nM-IIa" id="OLg-ZD-5VZ"/>
+                        <outlet property="currentTimeLabel" destination="RD4-0W-dMM" id="3DQ-th-Kcr"/>
+                        <outlet property="diminishTimeButton" destination="mzR-nC-yQD" id="uIr-gZ-Wi6"/>
+                        <segue destination="KGL-k3-h52" kind="relationship" relationship="nextPage" id="Qcq-yO-iJR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="575.38461538461547" y="257.61538461538464"/>
         </scene>
     </scenes>
 </document>

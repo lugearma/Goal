@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		929171911F2265D400CB1511 /* WaffleSoft.otf in Resources */ = {isa = PBXBuildFile; fileRef = 929171901F2265D400CB1511 /* WaffleSoft.otf */; };
+		929171921F22661900CB1511 /* WaffleSoft.otf in Resources */ = {isa = PBXBuildFile; fileRef = 929171901F2265D400CB1511 /* WaffleSoft.otf */; };
+		929171971F22681200CB1511 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */; };
+		929171981F22681200CB1511 /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171941F22681200CB1511 /* CaviarDreams_BoldItalic.ttf */; };
+		929171991F22681200CB1511 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */; };
+		9291719A1F22681200CB1511 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171961F22681200CB1511 /* CaviarDreams.ttf */; };
+		9291719B1F2268A100CB1511 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */; };
+		9291719C1F2268A500CB1511 /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171941F22681200CB1511 /* CaviarDreams_BoldItalic.ttf */; };
+		9291719D1F2268A600CB1511 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */; };
+		9291719E1F2268A900CB1511 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171961F22681200CB1511 /* CaviarDreams.ttf */; };
+		929171A21F226B0E00CB1511 /* GoalTimeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929171A11F226B0E00CB1511 /* GoalTimeInterfaceController.swift */; };
 		92AF1F4D1F210975007ABBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F4C1F210975007ABBC3 /* AppDelegate.swift */; };
 		92AF1F4F1F210975007ABBC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F4E1F210975007ABBC3 /* ViewController.swift */; };
 		92AF1F521F210975007ABBC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AF1F501F210975007ABBC3 /* Main.storyboard */; };
@@ -16,7 +27,7 @@
 		92AF1F621F210976007ABBC3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AF1F601F210976007ABBC3 /* Interface.storyboard */; };
 		92AF1F641F210976007ABBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AF1F631F210976007ABBC3 /* Assets.xcassets */; };
 		92AF1F6B1F210976007ABBC3 /* Goal WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92AF1F6A1F210976007ABBC3 /* Goal WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		92AF1F721F210976007ABBC3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F711F210976007ABBC3 /* InterfaceController.swift */; };
+		92AF1F721F210976007ABBC3 /* GoalSelectorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F711F210976007ABBC3 /* GoalSelectorInterfaceController.swift */; };
 		92AF1F741F210976007ABBC3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F731F210976007ABBC3 /* ExtensionDelegate.swift */; };
 		92AF1F761F210976007ABBC3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F751F210976007ABBC3 /* NotificationController.swift */; };
 		92AF1F781F210976007ABBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AF1F771F210976007ABBC3 /* Assets.xcassets */; };
@@ -65,6 +76,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		929171901F2265D400CB1511 /* WaffleSoft.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WaffleSoft.otf; sourceTree = "<group>"; };
+		929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
+		929171941F22681200CB1511 /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		929171961F22681200CB1511 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		929171A11F226B0E00CB1511 /* GoalTimeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalTimeInterfaceController.swift; sourceTree = "<group>"; };
 		92AF1F491F210975007ABBC3 /* Goal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AF1F4C1F210975007ABBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92AF1F4E1F210975007ABBC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +95,7 @@
 		92AF1F651F210976007ABBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92AF1F6A1F210976007ABBC3 /* Goal WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Goal WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AF1F701F210976007ABBC3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		92AF1F711F210976007ABBC3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		92AF1F711F210976007ABBC3 /* GoalSelectorInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelectorInterfaceController.swift; sourceTree = "<group>"; };
 		92AF1F731F210976007ABBC3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		92AF1F751F210976007ABBC3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		92AF1F771F210976007ABBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +120,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9291718B1F22582900CB1511 /* InferfaceController */ = {
+			isa = PBXGroup;
+			children = (
+				929171A01F226A3600CB1511 /* CaloriesGoal */,
+				9291719F1F226A0500CB1511 /* TimeGoal */,
+				9291718C1F22584600CB1511 /* GoalSelector */,
+			);
+			name = InferfaceController;
+			sourceTree = "<group>";
+		};
+		9291718C1F22584600CB1511 /* GoalSelector */ = {
+			isa = PBXGroup;
+			children = (
+				92AF1F711F210976007ABBC3 /* GoalSelectorInterfaceController.swift */,
+			);
+			name = GoalSelector;
+			sourceTree = "<group>";
+		};
+		9291718D1F22595500CB1511 /* GoalSelector */ = {
+			isa = PBXGroup;
+			children = (
+				92AF1F601F210976007ABBC3 /* Interface.storyboard */,
+			);
+			name = GoalSelector;
+			sourceTree = "<group>";
+		};
+		9291719F1F226A0500CB1511 /* TimeGoal */ = {
+			isa = PBXGroup;
+			children = (
+				929171A11F226B0E00CB1511 /* GoalTimeInterfaceController.swift */,
+			);
+			name = TimeGoal;
+			sourceTree = "<group>";
+		};
+		929171A01F226A3600CB1511 /* CaloriesGoal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CaloriesGoal;
+			sourceTree = "<group>";
+		};
 		92AF1F401F210975007ABBC3 = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +197,7 @@
 		92AF1F5F1F210976007ABBC3 /* Goal WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				92AF1F601F210976007ABBC3 /* Interface.storyboard */,
+				9291718D1F22595500CB1511 /* GoalSelector */,
 				92AF1F631F210976007ABBC3 /* Assets.xcassets */,
 				92AF1F651F210976007ABBC3 /* Info.plist */,
 			);
@@ -149,7 +207,7 @@
 		92AF1F6E1F210976007ABBC3 /* Goal WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				92AF1F711F210976007ABBC3 /* InterfaceController.swift */,
+				9291718B1F22582900CB1511 /* InferfaceController */,
 				92AF1F731F210976007ABBC3 /* ExtensionDelegate.swift */,
 				92AF1F751F210976007ABBC3 /* NotificationController.swift */,
 				92AF1F771F210976007ABBC3 /* Assets.xcassets */,
@@ -162,6 +220,11 @@
 		92AF1F6F1F210976007ABBC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */,
+				929171941F22681200CB1511 /* CaviarDreams_BoldItalic.ttf */,
+				929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */,
+				929171961F22681200CB1511 /* CaviarDreams.ttf */,
+				929171901F2265D400CB1511 /* WaffleSoft.otf */,
 				92AF1F701F210976007ABBC3 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -287,6 +350,11 @@
 			files = (
 				92AF1F641F210976007ABBC3 /* Assets.xcassets in Resources */,
 				92AF1F621F210976007ABBC3 /* Interface.storyboard in Resources */,
+				929171921F22661900CB1511 /* WaffleSoft.otf in Resources */,
+				9291719B1F2268A100CB1511 /* CaviarDreams_Bold.ttf in Resources */,
+				9291719C1F2268A500CB1511 /* CaviarDreams_BoldItalic.ttf in Resources */,
+				9291719D1F2268A600CB1511 /* CaviarDreams_Italic.ttf in Resources */,
+				9291719E1F2268A900CB1511 /* CaviarDreams.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +362,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929171971F22681200CB1511 /* CaviarDreams_Bold.ttf in Resources */,
+				929171911F2265D400CB1511 /* WaffleSoft.otf in Resources */,
+				9291719A1F22681200CB1511 /* CaviarDreams.ttf in Resources */,
 				92AF1F781F210976007ABBC3 /* Assets.xcassets in Resources */,
+				929171991F22681200CB1511 /* CaviarDreams_Italic.ttf in Resources */,
+				929171981F22681200CB1511 /* CaviarDreams_BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +388,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AF1F761F210976007ABBC3 /* NotificationController.swift in Sources */,
+				929171A21F226B0E00CB1511 /* GoalTimeInterfaceController.swift in Sources */,
 				92AF1F741F210976007ABBC3 /* ExtensionDelegate.swift in Sources */,
-				92AF1F721F210976007ABBC3 /* InterfaceController.swift in Sources */,
+				92AF1F721F210976007ABBC3 /* GoalSelectorInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +645,7 @@
 				92AF1F7E1F210976007ABBC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92AF1F801F210976007ABBC3 /* Build configuration list for PBXNativeTarget "Goal WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +654,7 @@
 				92AF1F821F210976007ABBC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92AF1F841F210976007ABBC3 /* Build configuration list for PBXNativeTarget "Goal" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +663,7 @@
 				92AF1F861F210976007ABBC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
