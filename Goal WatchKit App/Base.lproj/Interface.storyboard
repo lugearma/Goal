@@ -1,16 +1,85 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13156.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13040"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialHB.ttc">
+            <string>ArialHebrew-Bold</string>
+        </array>
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Goal_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="31" alignment="left" text="Select your Goal" textAlignment="center" id="4R3-Qt-49M">
+                            <fontDescription key="font" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                        </label>
+                        <label width="1" height="34" alignment="left" text="You can select how to finish your workout" textAlignment="center" numberOfLines="2" id="04n-UA-5th">
+                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="12"/>
+                        </label>
+                        <label width="1" height="23" alignment="left" text="Active Goal:" textAlignment="center" id="Hbf-hg-FgS">
+                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="10"/>
+                        </label>
+                        <group width="1" height="70" alignment="center" verticalAlignment="bottom" contentMode="scaleAspectFit" spacing="0.0" id="FIG-yw-GuP">
+                            <items>
+                                <group width="0.5" alignment="center" verticalAlignment="center" id="TvU-k0-fkE">
+                                    <items>
+                                        <group width="70" height="70" alignment="center" verticalAlignment="center" radius="35" id="Mca-bM-uuV">
+                                            <items>
+                                                <imageView width="1" height="1" alignment="left" image="ClockButtonImage" contentMode="scaleAspectFit" id="SHa-HD-QYp">
+                                                    <gestureRecognizers>
+                                                        <tapGestureRecognizer id="eSt-Ds-AGg">
+                                                            <connections>
+                                                                <action selector="handleClockButtonTapped" destination="AgC-eL-Hgc" id="vob-9a-syg"/>
+                                                            </connections>
+                                                        </tapGestureRecognizer>
+                                                    </gestureRecognizers>
+                                                </imageView>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="center" verticalAlignment="center" id="grD-cJ-zYF">
+                                    <items>
+                                        <group width="70" height="70" alignment="center" verticalAlignment="center" radius="35" id="meT-nK-55x">
+                                            <items>
+                                                <imageView width="1" height="1" alignment="left" image="FlameButtonImage" contentMode="scaleAspectFit" animationDuration="0.5" id="XBj-mc-AxF">
+                                                    <gestureRecognizers>
+                                                        <tapGestureRecognizer id="AGk-6p-a8G">
+                                                            <connections>
+                                                                <action selector="handleCaloriesButtonTapped" destination="AgC-eL-Hgc" id="oj9-F8-fj5"/>
+                                                            </connections>
+                                                        </tapGestureRecognizer>
+                                                    </gestureRecognizers>
+                                                </imageView>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="caloriesButtonImage" destination="XBj-mc-AxF" id="uQI-re-pCx"/>
+                        <outlet property="caloriesTapGesture" destination="AGk-6p-a8G" id="IIo-Wc-Twz"/>
+                        <outlet property="clockButtonImage" destination="SHa-HD-QYp" id="Dsa-UQ-kae"/>
+                        <outlet property="clockTapGesture" destination="eSt-Ds-AGg" id="knj-D3-MDQ"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="327.79487179487182" y="307.30769230769232"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +100,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Goal_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
