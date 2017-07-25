@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924AE4691F26C04D00378971 /* TrainingVideoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AE4681F26C04D00378971 /* TrainingVideoInterfaceController.swift */; };
+		924AE46D1F26C31C00378971 /* small.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 924AE46C1F26C31C00378971 /* small.mp4 */; };
+		924AE46F1F26C75500378971 /* CaloriesGoalInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AE46E1F26C75500378971 /* CaloriesGoalInterfaceController.swift */; };
 		929171911F2265D400CB1511 /* WaffleSoft.otf in Resources */ = {isa = PBXBuildFile; fileRef = 929171901F2265D400CB1511 /* WaffleSoft.otf */; };
 		929171921F22661900CB1511 /* WaffleSoft.otf in Resources */ = {isa = PBXBuildFile; fileRef = 929171901F2265D400CB1511 /* WaffleSoft.otf */; };
 		929171971F22681200CB1511 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */; };
@@ -18,6 +21,7 @@
 		9291719D1F2268A600CB1511 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */; };
 		9291719E1F2268A900CB1511 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929171961F22681200CB1511 /* CaviarDreams.ttf */; };
 		929171A21F226B0E00CB1511 /* GoalTimeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929171A11F226B0E00CB1511 /* GoalTimeInterfaceController.swift */; };
+		929171A51F227BE700CB1511 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929171A41F227BE700CB1511 /* UIColor.swift */; };
 		92AF1F4D1F210975007ABBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F4C1F210975007ABBC3 /* AppDelegate.swift */; };
 		92AF1F4F1F210975007ABBC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF1F4E1F210975007ABBC3 /* ViewController.swift */; };
 		92AF1F521F210975007ABBC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AF1F501F210975007ABBC3 /* Main.storyboard */; };
@@ -76,12 +80,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		924AE4681F26C04D00378971 /* TrainingVideoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingVideoInterfaceController.swift; sourceTree = "<group>"; };
+		924AE46C1F26C31C00378971 /* small.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = small.mp4; sourceTree = "<group>"; };
+		924AE46E1F26C75500378971 /* CaloriesGoalInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesGoalInterfaceController.swift; sourceTree = "<group>"; };
 		929171901F2265D400CB1511 /* WaffleSoft.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WaffleSoft.otf; sourceTree = "<group>"; };
 		929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
 		929171941F22681200CB1511 /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
 		929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
 		929171961F22681200CB1511 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
 		929171A11F226B0E00CB1511 /* GoalTimeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalTimeInterfaceController.swift; sourceTree = "<group>"; };
+		929171A41F227BE700CB1511 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		92AF1F491F210975007ABBC3 /* Goal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AF1F4C1F210975007ABBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92AF1F4E1F210975007ABBC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,9 +128,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		924AE4671F26C01B00378971 /* TrainingVideo */ = {
+			isa = PBXGroup;
+			children = (
+				924AE4681F26C04D00378971 /* TrainingVideoInterfaceController.swift */,
+			);
+			name = TrainingVideo;
+			sourceTree = "<group>";
+		};
 		9291718B1F22582900CB1511 /* InferfaceController */ = {
 			isa = PBXGroup;
 			children = (
+				924AE4671F26C01B00378971 /* TrainingVideo */,
 				929171A01F226A3600CB1511 /* CaloriesGoal */,
 				9291719F1F226A0500CB1511 /* TimeGoal */,
 				9291718C1F22584600CB1511 /* GoalSelector */,
@@ -157,8 +174,17 @@
 		929171A01F226A3600CB1511 /* CaloriesGoal */ = {
 			isa = PBXGroup;
 			children = (
+				924AE46E1F26C75500378971 /* CaloriesGoalInterfaceController.swift */,
 			);
 			name = CaloriesGoal;
+			sourceTree = "<group>";
+		};
+		929171A31F227BC500CB1511 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				929171A41F227BE700CB1511 /* UIColor.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		92AF1F401F210975007ABBC3 = {
@@ -207,6 +233,7 @@
 		92AF1F6E1F210976007ABBC3 /* Goal WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				929171A31F227BC500CB1511 /* Extensions */,
 				9291718B1F22582900CB1511 /* InferfaceController */,
 				92AF1F731F210976007ABBC3 /* ExtensionDelegate.swift */,
 				92AF1F751F210976007ABBC3 /* NotificationController.swift */,
@@ -220,6 +247,7 @@
 		92AF1F6F1F210976007ABBC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				924AE46C1F26C31C00378971 /* small.mp4 */,
 				929171931F22681200CB1511 /* CaviarDreams_Bold.ttf */,
 				929171941F22681200CB1511 /* CaviarDreams_BoldItalic.ttf */,
 				929171951F22681200CB1511 /* CaviarDreams_Italic.ttf */,
@@ -363,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				929171971F22681200CB1511 /* CaviarDreams_Bold.ttf in Resources */,
+				924AE46D1F26C31C00378971 /* small.mp4 in Resources */,
 				929171911F2265D400CB1511 /* WaffleSoft.otf in Resources */,
 				9291719A1F22681200CB1511 /* CaviarDreams.ttf in Resources */,
 				92AF1F781F210976007ABBC3 /* Assets.xcassets in Resources */,
@@ -390,7 +419,10 @@
 				92AF1F761F210976007ABBC3 /* NotificationController.swift in Sources */,
 				929171A21F226B0E00CB1511 /* GoalTimeInterfaceController.swift in Sources */,
 				92AF1F741F210976007ABBC3 /* ExtensionDelegate.swift in Sources */,
+				924AE46F1F26C75500378971 /* CaloriesGoalInterfaceController.swift in Sources */,
 				92AF1F721F210976007ABBC3 /* GoalSelectorInterfaceController.swift in Sources */,
+				929171A51F227BE700CB1511 /* UIColor.swift in Sources */,
+				924AE4691F26C04D00378971 /* TrainingVideoInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

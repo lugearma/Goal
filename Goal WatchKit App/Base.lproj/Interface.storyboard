@@ -9,9 +9,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="CaviarDreams.ttf">
-            <string>CaviarDreams</string>
-        </array>
         <array key="CaviarDreams_Bold.ttf">
             <string>CaviarDreams-Bold</string>
         </array>
@@ -23,11 +20,21 @@
                 <controller contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="GoalSelectorInterfaceController" customModule="Goal_WatchKit_Extension">
                     <items>
                         <label width="1" height="31" alignment="left" text="Select your Goal" textAlignment="center" id="4R3-Qt-49M">
-                            <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="18"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
                         </label>
-                        <label width="1" height="51" alignment="left" text="You can select how to finish your workout" textAlignment="center" numberOfLines="2" id="04n-UA-5th">
-                            <fontDescription key="font" name="CaviarDreams" family="Caviar Dreams" pointSize="12"/>
+                        <label width="1" height="46" alignment="left" text="You can select how to finish your workout" textAlignment="center" numberOfLines="2" id="04n-UA-5th">
+                            <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
+                        <group width="1" alignment="center" verticalAlignment="center" id="Dbh-qi-avh">
+                            <items>
+                                <label width="0.5" alignment="left" text="Time" textAlignment="center" id="RXe-bh-7oy">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label width="0.5" alignment="right" text="Calories" textAlignment="center" id="q6J-kI-V12">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
                         <group width="1" height="70" alignment="center" verticalAlignment="bottom" contentMode="scaleAspectFit" spacing="0.0" id="FIG-yw-GuP">
                             <items>
                                 <group width="0.5" alignment="center" verticalAlignment="center" id="TvU-k0-fkE">
@@ -74,16 +81,21 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="279" y="430"/>
+            <point key="canvasLocation" x="278.97435897435901" y="427.17948717948718"/>
         </scene>
-        <!--Time per exercise-->
-        <scene sceneID="pIC-7C-7La">
+        <!--VideoPlayer-->
+        <scene sceneID="nyJ-zt-TAY">
             <objects>
-                <controller title="Time per exercise" id="KGL-k3-h52">
-                    <color key="backgroundColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                <controller identifier="VideoPlayer" id="Rq1-Pe-nl4" customClass="TrainingVideoInterfaceController" customModule="Goal_WatchKit_Extension">
+                    <items>
+                        <movie width="1" height="1" alignment="center" verticalAlignment="center" id="0Of-Fd-G2e"/>
+                    </items>
+                    <connections>
+                        <outlet property="videoMovie" destination="0Of-Fd-G2e" id="Vin-ji-dSv"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="860" y="258"/>
+            <point key="canvasLocation" x="1103" y="252"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -106,21 +118,9 @@
             <objects>
                 <controller identifier="CaloriesFlow" title="Goal Time" id="XEB-o4-1JJ">
                     <color key="backgroundColor" red="1" green="0.61178927949999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <connections>
-                        <segue destination="z7z-cR-CVf" kind="relationship" relationship="nextPage" id="cqg-Ne-cxl"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="575" y="625"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="Pj7-4p-KpQ">
-            <objects>
-                <controller id="z7z-cR-CVf">
-                    <color key="backgroundColor" red="0.43137254899999999" green="0.65098039220000004" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="846" y="625"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
@@ -134,18 +134,18 @@
             <objects>
                 <controller identifier="ClockFlow" id="8fZ-DK-M5n" customClass="GoalTimeInterfaceController" customModule="Goal_WatchKit_Extension">
                     <items>
-                        <label width="156" height="40" alignment="left" text="Select Goal Time" textAlignment="center" id="y7j-Ky-YeA">
-                            <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="13"/>
+                        <label width="1" height="40" alignment="center" text="Select Goal Time" textAlignment="center" id="y7j-Ky-YeA">
+                            <fontDescription key="font" type="system" pointSize="18"/>
                         </label>
-                        <group width="1" height="44" alignment="left" id="NfY-XT-jZm">
+                        <group width="1" height="43" alignment="left" id="NfY-XT-jZm">
                             <items>
                                 <group width="0.29999999999999999" alignment="left" verticalAlignment="center" id="fJa-6D-dtd">
                                     <items>
-                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="iZ3-j2-JtC">
+                                        <group width="40" height="40" alignment="center" verticalAlignment="center" radius="20" id="iZ3-j2-JtC">
                                             <items>
                                                 <button width="1" height="1" alignment="center" verticalAlignment="center" title="-" id="mzR-nC-yQD">
                                                     <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="22"/>
+                                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="25"/>
                                                     <connections>
                                                         <action selector="diminishTime" destination="8fZ-DK-M5n" id="u2Z-Vo-3FQ"/>
                                                     </connections>
@@ -155,15 +155,15 @@
                                     </items>
                                 </group>
                                 <label alignment="center" verticalAlignment="center" text="00" textAlignment="center" id="RD4-0W-dMM">
-                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="20"/>
+                                    <fontDescription key="font" type="system" pointSize="26"/>
                                 </label>
                                 <group width="0.29999999999999999" alignment="right" verticalAlignment="center" id="fKk-WJ-aVB">
                                     <items>
-                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="2br-ai-0oz">
+                                        <group width="40" height="40" alignment="center" verticalAlignment="center" radius="20" id="2br-ai-0oz">
                                             <items>
                                                 <button width="1" height="1" alignment="right" verticalAlignment="center" title="+" id="KdE-nM-IIa">
                                                     <color key="backgroundColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="22"/>
+                                                    <fontDescription key="font" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="25"/>
                                                     <connections>
                                                         <action selector="addTime" destination="8fZ-DK-M5n" id="5L7-RW-BnQ"/>
                                                     </connections>
@@ -174,17 +174,25 @@
                                 </group>
                             </items>
                         </group>
+                        <label width="1" alignment="left" text="minutes" textAlignment="center" id="SDO-qj-9cm"/>
+                        <button width="1" height="45" alignment="left" title="Set" id="8YC-Cw-lsi">
+                            <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="0.62" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <action selector="setTime:" destination="8fZ-DK-M5n" id="tsg-3g-crV"/>
+                            </connections>
+                        </button>
                     </items>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="addTimeButton" destination="KdE-nM-IIa" id="OLg-ZD-5VZ"/>
                         <outlet property="currentTimeLabel" destination="RD4-0W-dMM" id="3DQ-th-Kcr"/>
                         <outlet property="diminishTimeButton" destination="mzR-nC-yQD" id="uIr-gZ-Wi6"/>
-                        <segue destination="KGL-k3-h52" kind="relationship" relationship="nextPage" id="Qcq-yO-iJR"/>
+                        <outlet property="setTimeButton" destination="8YC-Cw-lsi" id="flJ-gv-FO6"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="575.38461538461547" y="257.61538461538464"/>
+            <point key="canvasLocation" x="575.38461538461547" y="252.38461538461542"/>
         </scene>
     </scenes>
 </document>
